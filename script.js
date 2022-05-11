@@ -51,9 +51,11 @@ document.addEventListener('keypress', function (e) {
 		if (clockToggled === false) {
 			document.title = "Inqz"
 			alert("Clock has been stopped.")
+			console.log("stopped")
 		}
 		if (clockToggled === true) {
 			alert("Clock has been started.")
+			console.log("started")
 		}
 	}
 
