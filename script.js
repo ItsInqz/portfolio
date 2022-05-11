@@ -22,9 +22,9 @@ function clockTime() {
 	s = s < 10 ? "0" + s : s;
 
 	var time = h + ":" + m + ":" + s + " " + session;
-	document.getElementById("title").innerText = time;
-	document.getElementById("title").textContent = time;
-	document.getElementById("title").innerHTML = time;
+	document.getElementById("myCLock").innerText = time;
+	document.getElementById("myCLock").textContent = time;
+	document.getElementById("myCLock").innerHTML = time;
 
 	if (clockToggled === true) {
 		newPageTitle = time;
