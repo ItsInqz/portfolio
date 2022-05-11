@@ -1,6 +1,8 @@
 let discordShown = false;
 let clockToggled = true;
 
+console.log("v1")
+
 function clockTime() {
 	let date = new Date();
 	let h = date.getHours(); // 0 - 23
@@ -44,7 +46,9 @@ function revealDiscord() {
 }
 
 document.addEventListener('keypress', function (e) {
-	if (e.key === 'Enter') {
+	if (e.key === 'c') {
 		clockToggled = !clockToggled
+		document.title = "Inqz"
+		alert("Clock has been stopped.")
 	}
 });
