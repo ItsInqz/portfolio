@@ -48,7 +48,13 @@ function revealDiscord() {
 document.addEventListener('keypress', function (e) {
 	if (e.key === 'c') {
 		clockToggled = !clockToggled
-		document.title = "Inqz"
-		alert("Clock has been stopped.")
+		if (clockToggled === false) {
+			document.title = "Inqz"
+			alert("Clock has been stopped.")
+		}
+		if (clockToggled === true) {
+			alert("Clock has been started.")
+		}
 	}
+
 });
