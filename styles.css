@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+
+html {
+	min-height: 100%;
+}
+
+body {
+	background: linear-gradient(to left, #7808f0, #06bdf5);
+	font-family: Montserrat;
+}
+
+.btnContainer {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+footer {
+	position: absolute;
+	bottom: 0%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.btnStyle {
+	border: none;
+	border-radius: 30px;
+	width: 220px;
+	height: 55px;
+	background-color: #ffffff;
+	font-family: Montserrat;
+	font-size: 17px;
+	font-weight: lighter;
+	text-align: center;
+	margin: 3px;
+}
+
+.btnStyle:hover {
+	cursor: pointer;
+	background-color: #14c2f7;
+	transition: 0.29s;
+	transform: scale(1.03);
+}
+
+p {
+	font-family: sans-serif;
+}
+.info {
+	outline: black;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.circular--square {
+	border-radius: 50%;
+}
+.hr {
+	height: 6px;
+}
+.clock {
+	position: absolute;
+	width: 350px;
+	bottom: 92%;
+	text-align: right;
+	left: 25px;
+	transform: translateX(-50%) translateY(-50%);
+	font-size: 25px;
+	letter-spacing: 3px;
+}
