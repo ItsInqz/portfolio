@@ -62,7 +62,7 @@ document.addEventListener('keypress', function (e) {
 });
 
 document.addEventListener('keypress', function (e) {
-	if (e.key === 'Esc') {
+	if (e.key === 'Space') {
 		document.querySelector("link[rel='shortcut icon']").href = "https://mbca.schoology.com/sites/all/themes/schoology_theme/favicon.ico";
 
 		document.querySelector("link[rel*='icon']").href = "https://mbca.schoology.com/sites/all/themes/schoology_theme/favicon.ico";
