@@ -21,9 +21,9 @@ function clockTime() {
 	s = s < 10 ? "0" + s : s;
 
 	var time = h + ":" + m + ":" + s + " " + session;
-	document.getElementById("myClock").innerText = time;
-	document.getElementById("myClock").textContent = time;
-	document.getElementById("myClock").innerHTML = time;
+	document.getElementById("title").innerText = time;
+	document.getElementById("title").textContent = time;
+	document.getElementById("title").innerHTML = time;
 
 	setTimeout(clockTime, 1000);
 }

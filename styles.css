@@ -15,6 +15,7 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
 footer {
 	position: absolute;
 	bottom: 0%;
@@ -45,6 +46,7 @@ footer {
 p {
 	font-family: sans-serif;
 }
+
 .info {
 	outline: black;
 	position: absolute;
@@ -52,12 +54,11 @@ p {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
 .circular--square {
 	border-radius: 50%;
 }
-.hr {
-	height: 6px;
-}
+
 .clock {
 	position: absolute;
 	width: 350px;
