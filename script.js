@@ -1,4 +1,5 @@
 let discordShown = false;
+let clockToggled = true;
 
 function clockTime() {
 	let date = new Date();
@@ -25,6 +26,10 @@ function clockTime() {
 	document.getElementById("title").textContent = time;
 	document.getElementById("title").innerHTML = time;
 
+	if (clockToggled === true) {
+		newPageTitle = time;
+		document.querySelector('title').textContent = newPageTitle;
+	}
 	setTimeout(clockTime, 1000);
 }
 
@@ -37,3 +42,9 @@ function revealDiscord() {
 		discordShown = false;
 	}
 }
+
+document.addEventListener('keypress', function (e) {
+	if (e.key === 'Enter') {
+		clockToggled = !clockToggled
+	}
+});
